@@ -1,0 +1,87 @@
+/* styles.css */
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(135deg, #ff6f91, #ffcc70, #47bfff);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #fff;
+    margin-top: 0;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #fff;
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 1.2em;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+p.attempts {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.emoji {
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

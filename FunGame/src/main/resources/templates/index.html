@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Number Guessing Game 🎉</h1>
+        <div class="message">
+            <span class="emoji">🔍</span>
+            <p th:text="${message}"></p>
+        </div>
+        <form th:action="@{/guess}" method="post" th:if="${!playAgain}">
+            <label for="guess">Enter your guess:</label>
+            <input type="number" id="guess" name="guess" required>
+            <button type="submit">Submit 🚀</button>
+        </form>
+        <form th:action="@{/reset}" method="post" th:if="${playAgain}">
+            <button type="submit">Play Again 🔄</button>
+        </form>
+        <p class="attempts">Attempts: <span th:text="${attempts}"></span></p>
+    </div>
+</body>
+</html>
